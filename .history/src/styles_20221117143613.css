@@ -1,0 +1,1215 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* ------------------------------------------------------------END_OF_CSS_RESET------------------------------------------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap'); 
+
+
+/* -----------------------------------------------------------Beginning of Page Styling---------------------------------------------------------------- */
+  .homebody {
+  margin: 0 auto; 
+  height: 100%;
+}
+
+.gallerybody {
+  margin: 0 auto;
+  height: 100%;
+}
+/* @media screen and (max-width: 428px) {
+  .gallerybody {
+    
+  }
+} */
+/* ---------------------------------------------------------------Top Banner Image--------------------------------------------------------------------- */
+
+
+.piebanner_img{
+  background-image: url('/public/primrose_pie_banner.svg');
+  background-position: center;
+  max-width: 100%;
+  height: 44.5rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+@media screen and (max-width: 428px) {
+  .piebanner_img {
+    height: 35rem;
+  }
+}
+
+.primrose_icon_container_top {
+ display: flex; 
+ justify-content: center;
+ align-items: center;
+ border: none; 
+ position: absolute;
+ top: 5%;
+ left: 50%; 
+ transform: translate(-50%, -50%);
+ height:6rem;
+ background-color:rgba(85, 0, 82, .6);
+ border-radius: 0px 0px 25px 25px;
+}
+@media screen and (max-width: 428px) {
+  .primrose_icon_container_top {
+    height: 4rem;
+    top:2.89%;
+    margin-top: 3.5rem;
+    width: 15.75rem;
+  }
+}
+
+.primrose_icon {
+  justify-content: center;
+  align-items: center; 
+height: 6rem;
+width: 17rem;
+background-image: url("/public/primrose_main_logo.svg");
+background-repeat: no-repeat;
+background-position: center;
+}
+@media screen and (max-width: 428px) {
+  .primrose_icon {
+    height: 4rem;
+    transform: scale(0.8);
+  }
+}
+
+ .piebanner_text_and_button_container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+ } 
+ 
+.piebanner_text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 62px;
+  font-weight: 100;
+  padding-top: 12rem;
+  line-height: 79px;
+  letter-spacing: .1rem;
+}
+@media screen and (max-width: 428px) {
+  .piebanner_text {
+   padding-top: 6rem;
+   font-size: 3rem;
+   line-height: 55px;
+   margin-top: 1rem;
+  }
+}
+
+
+.piebanner_order_button {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: bicyclette, sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
+  height: 3rem;
+  letter-spacing: 2px;
+  margin-top: 4rem;
+  padding-top: 25px;
+  text-align: center;
+  width: 15rem;
+  word-spacing: 2px;
+}
+@media screen and (max-width: 428px) {
+  .piebanner_order_button {
+   margin-top: 2rem;
+   font-size: 18px;
+   height: 2.5rem;
+   width: 11rem;
+   padding-top: 21px;
+
+  }
+}
+
+/* ---------------------------------------------------------------------Nav---------------------------------------------------------------------------- */
+
+nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 4rem;
+  background-color: #550052;
+  opacity: .75;
+  position: relative;
+}
+@media screen and (max-width: 428px) {
+  nav {
+    background-color: none;
+    height: 3rem;
+  }
+}
+
+.gnav {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 4rem;
+  background-color: #550052;
+  position: relative;
+  margin-bottom: 4rem;
+}
+@media screen and (max-width: 428px) {
+  .gnav {
+    background-color: none;
+    height: 3rem;
+  }
+}
+
+nav a {
+  font-family: bicyclette, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: .8rem;
+}
+
+.gnav a {
+  font-family: bicyclette, sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: .8rem;
+}
+
+.home{
+  margin-right: 5rem;
+}
+@media screen and (max-width: 428px) {
+  .home {
+    margin-right: 2rem;
+  }
+}
+.gallery{
+  margin-right: 14rem;
+}
+@media screen and (max-width: 428px) {
+  .gallery {
+    margin-right: 1rem;
+  }
+}
+
+.about{
+  margin-left: 14rem;
+}
+@media screen and (max-width: 428px) {
+  .about {
+   margin-left: 1rem;
+
+  }
+}
+
+.order{
+  margin-left: 5rem;
+}
+@media screen and (max-width: 428px) {
+  .order {
+   margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 428px) {
+  nav h4 {
+    font-size: 4rem;
+  }
+}
+
+a {
+  color: white;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: white;
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------------------Triptych Container--------------------------------------------------------------------- */
+ .triptych_container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 8rem; 
+  background-color: #f5d4f4;
+  padding-bottom: 6.5rem;
+  height: auto;
+  
+}
+@media screen and (max-width: 428px) {
+   .triptych_container {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0rem;
+    margin-bottom: .3rem;
+    margin-top: .3rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
+    padding-bottom: 0rem;
+  }
+}
+
+ .triptych_cookies_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/primrose_triptych_cookies.svg");
+  height: 23.75rem;
+  width: 23.75rem;
+}
+@media screen and (max-width: 428px) {
+ .triptych_cookies_img{
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+} 
+ .triptych_pastries_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/primrose_triptych_pastries.svg");
+  height: 23.75rem;
+  width: 23.75rem;
+}
+@media screen and (max-width: 428px) {
+   .triptych_pastries_img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+}
+ .triptych_cakes_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/public/primrose_triptych_cakes.svg");
+  height: 23.75rem;
+  width: 23.75rem;
+}
+@media screen and (max-width: 428px) {
+  .triptych_cakes_img {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 18rem;
+  }
+}
+
+a .triptych_cookies_text{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: bicyclette, sans-serif;
+  letter-spacing: 7px;
+} 
+
+a .triptych_pastries_text{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: bicyclette, sans-serif;
+  letter-spacing: 7px;
+  
+} 
+
+ a .triptych_cakes_text{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: bicyclette, sans-serif;
+  letter-spacing: 7px;
+  
+} 
+ 
+/* ----------------------------------------------------------------Middletext-------------------------------------------------------------------------- */
+.middletext_content_container{
+  display: flex;
+  justify-content: center;
+  background-color: #f5d4f4;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  height: auto;
+}
+@media screen and (max-width: 428px) {
+  .middletext_content_container{
+    flex-direction: column; 
+    padding-top: 0rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+  
+  }
+} 
+
+.middletext_left_container{
+  padding-top: 2rem;
+  margin-right: 6rem;
+
+}
+@media screen and (max-width: 428px) {
+  .middletext_left_container{
+   margin-right: 0rem;
+   margin-top: 2rem;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
+  }
+} 
+
+.middletext_left_purple{
+  font-size: 7rem;
+  line-height: 150px;
+  color:#550052;
+}
+@media screen and (max-width: 428px) {
+  .middletext_left_purple{
+    line-height: 80px;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: .5rem;
+  }
+} 
+
+.middletext_left_pink{
+  font-size: 7rem;
+  line-height: 120px;
+  color:#C00170;
+}
+@media screen and (max-width: 428px) {
+  .middletext_left_pink{
+   line-height: 80px;
+   font-size: 3.5rem;
+   margin-bottom: 1.8rem;
+   text-align: center;
+  }
+} 
+
+.middletext_vertical_bar {
+  border: 2px solid #550052;
+  height: 500px;
+}
+@media screen and (max-width: 428px) {
+  .middletext_vertical_bar{
+   height: 0rem;
+  }
+} 
+.middletext_right_container{
+  padding-top: 2rem;
+  margin-right: 5rem;
+}
+@media screen and (max-width: 428px) {
+.middletext_right_container{
+  padding-top: 0rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding-bottom: 2rem;
+  
+}
+}
+.middletext_right{
+  width: 33rem;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 47px;
+  margin-left: 6rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 428px) {
+  .middletext_right{
+    margin-top: 4rem;
+    margin-left: 0rem;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+  }
+} 
+
+@media screen and (max-width: 428px) {
+  .middletext_rb_container{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.middletext_right_button{
+  color: black;
+  border: 2px solid #550052;
+  height: 3rem;
+  width: 15rem;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 9rem;
+  padding-top: 1.6rem;
+  font-family: bicyclette, sans-serif;
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+  line-height: 23px;
+  word-spacing: 3px;
+
+}
+@media screen and (max-width: 428px) {
+  .middletext_right_button{
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 18px;
+    height: 2.5rem;
+    width: 11rem;
+    margin-top: 2rem;
+    padding-top: 21px;
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+  }
+} 
+/* -----------------------------------------------------------------Bottom Bannner Home--------------------------------------------------------------------- */
+
+
+ 
+.doughnut_banner_img{
+  background-image: url('/public/primrose_doughnut_banner.svg');
+  background-position: center;
+  height: 37rem;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.doughnut_banner_text_and_button_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.doughnut_banner_text{
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 100;
+  text-align: center;
+  font-family: Lora;
+  letter-spacing: 2px;
+  margin-top: 10rem;
+  line-height: 79px;
+  width: 45rem;
+}
+@media screen and (max-width: 428px) {
+  .doughnut_banner_text{
+    font-size: 3.3rem;
+    margin-top: 8rem;
+    width: 24rem;
+    line-height: 60px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+} 
+.doughnut_order_button {
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: bicyclette, sans-serif;
+  font-size: 21px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  height: 2.8rem;
+  width: 14rem;
+  margin-top: 5rem;
+  padding-top: 1.6rem;
+}
+@media screen and (max-width: 428px) {
+  .doughnut_order_button{
+    width: 12rem;
+    padding-top: 1.2rem;
+    font-size: 18px;
+    height: 2.3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 5rem;
+    margin-left: 0rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+} 
+/* ---------------------------------------------------------------Footer------------------------------------------------------------------------------- */
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  height: 15rem;
+  max-width: 100%;
+  background-color: #550052;
+
+}
+@media screen and (max-width: 428px) {
+  .footer_container{
+   flex-direction: column;
+   height: 20rem;
+  }
+} 
+
+.lower_left_footer_container{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.primrose_icon_container_bottom {
+  display: flex;
+  height: 6.4375rem;
+  width: 19.375rem;
+  border: 2px solid #ffffff;
+  background-color: #550052;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  background-image: url("/public/primrose_main_logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer_left_text_container{
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 2rem;
+  margin-right: 4.5rem;
+}
+@media screen and (max-width: 428px) {
+  .footer_left_text_container{
+    margin-right: 1rem;
+    margin-left: 0rem;
+  }
+} 
+
+.footer_vertical_line{
+  display: flex;
+  border: 1px solid #ffffff;
+  transform: rotate(90deg);
+  padding-left: 2rem;
+}
+
+.footer_nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 428px) {
+  .footer_nav{
+    display: none;
+  }
+} 
+.footer_home {
+  margin-right: 3rem;
+}
+.footer_gallery{
+  margin-right: 1.5rem;
+}
+.footer_about{
+  margin-left: 1.5rem;
+}
+.footer_order{
+  margin-left: 3rem;
+}
+.footer_right_text_and_instagram{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: .5rem;
+  margin-right: 2rem;
+}
+
+.footer_right_text{
+  color: #F5D4F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-style: italic;
+  margin-bottom: 2.3rem;
+  font-family: 'Lora';
+}
+@media screen and (max-width: 428px) {
+  .footer_right_text{
+    display: none;
+  }
+} 
+.instagram_icon{
+  font-size: 3rem;
+  color: white; 
+}
+@media screen and (max-width: 428px) {
+  .instagram_icon{
+   padding-left: .8rem;
+  }
+} 
+  
+.some-page-wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5.8rem;
+}
+@media screen and (max-width: 428px) {
+  .some-page-wrapper{
+   padding-bottom: 0rem;
+  }
+} 
+.column1 {
+ margin-left: .5rem;
+ margin-right: .5rem;
+ margin-top: 6rem;
+}
+@media screen and (max-width: 428px) {
+  .column1{
+
+   margin-right: 0rem;
+  }
+} 
+.column1 .box1{
+  background-image: url("/public/primrose_cake.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column1 .box2{
+  background-image: url("/public/primrose_flour_whisk.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column1 .box3{
+  background-image: url("/public/primrose_doughnuts.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ .column1 .box4{
+  background-image: url("/public/primrose_cake.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+ 
+.column2 {
+  margin-left: .5rem;
+ margin-right: .5rem;
+ margin-top: 6rem;
+}
+.column2 .box1{
+  background-image: url("/public/primrose_enjoy2.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+.column3 {
+  margin-left: .5rem;
+ margin-right: .5rem;
+ margin-top: 6rem;
+}
+@media screen and (max-width: 428px) {
+  .column3{
+   margin-left: 0rem;
+  }
+} 
+.column3 .box1{
+  background-image: url("/public/primrose_beignet.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+.column4{ 
+  margin-left: .5rem;
+ margin-right: .5rem;
+ margin-top: 6rem;
+}
+@media screen and (max-width: 428px) {
+  .column4{
+  display: none;
+  }
+} 
+.column4 .box1{
+  background-image: url("/public/primrose_cake_cropped.jpg");
+  background-position: center; 
+  background-size: cover;
+ }
+
+.box1 {
+  height: 10rem;
+  width: 10rem;
+  background-color: #550052;
+  border: 2px solid black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-right: .5rem;
+}
+@media screen and (max-width: 428px) {
+  .box1{
+    height: 6rem;
+    width: 6rem;
+  }
+} 
+.box2 {
+  height: 10rem;
+  width: 10rem;
+  background-color: #C00170;
+  border: 2px solid black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 428px) {
+  .box2{
+    height: 6rem;
+    width: 6rem;
+  }
+} 
+.box3 {
+  height: 10rem;
+  width: 10rem;
+  background-color: #F5D4F4;
+  border: 2px solid black;
+  margin-top: 2rem;
+}
+@media screen and (max-width: 428px) {
+  .box3{
+    height: 6rem;
+    width: 6rem;
+  }
+} 
+.box4 {
+  height: 10rem;
+  width:  10rem;
+  background-color: yellow;
+  border: 2px solid black;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+@media screen and (max-width: 428px) {
+  .box4{
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 0rem;
+  }
+} 
+.testfooter {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  height: 5rem;
+  background-color: #550052;
+  margin-top: 2.8rem; 
+}
+@media screen and (max-width: 428px) {
+  .testfooter{
+   margin-top: 4.5rem;
+   height: 4rem;
+   font-size: 3rem;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .gallery_left_row .box1{
+  
+  height: 14rem;
+  width: 14rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_left_row .box1{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+} 
+.gallery_middle_row .box1{
+  
+  height: 14rem;
+  width: 14rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_middle_row .box1{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+} 
+
+.gallery_right_row .box1{
+  background-image: url("/public/primrose_enjoy2.jpg");
+  height: 14rem;
+  width: 14rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+
+@media screen and (max-width: 428px) {
+  .gallery_right_row .box1{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+} 
+.gallery_left_row .box2{
+  background-image: url("/public/primrose_beignet.jpg");
+  height: 14rem;
+  width: 14rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_left_row .box2{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+  }
+} 
+.gallery_middle_row .box2{
+  background-image: url("/public/primrose_flour_whisk.jpg");
+  height: 14rem;
+  width: 14rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_middle_row .box2{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+  }
+} 
+
+.gallery_right_row .box2{
+  height: 14rem;
+  width: 14rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_right_row .box2{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-bottom: 2rem;
+  }
+} 
+.gallery_left_row .box3{
+  height: 14rem;
+  width: 14rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_left_row .box3{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-bottom: 0rem;
+  }
+} 
+.gallery_middle_row .box3{
+  
+  height: 14rem;
+  width: 14rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_middle_row .box3{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-bottom: 0rem;
+  }
+} 
+
+.gallery_right_row .box3{
+  background-image: url("/public/primrose_brownies.jpg");
+  height: 14rem;
+  width: 14rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  align-items: center;
+  background-size:cover;
+}
+@media screen and (max-width: 428px) {
+  .gallery_right_row .box3{
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid black;
+    margin-bottom: 0rem;
+  }
+} 
+
+@media screen and (max-width: 428px) {
+  .gallery_footer_container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 6rem;
+   background-color:#550052;
+  }
+} 
+
+@media screen and (max-width: 428px) {
+.footer_instagram_icon {
+  font-size: 3.5rem;
+  color: white; 
+}
+} */
+@media screen and (max-width: 428px) {
+.about_page_wrapper {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0rem;
+}
+}
+@media screen and (max-width: 428px) {
+.about_text {
+  margin-top: 1.8rem;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+}
+@media screen and (max-width: 428px) {
+  .about_image {
+   display: flex;
+   justify-content: center; 
+   align-items: flex-end;
+   color: black;
+   height: 18rem;
+   width: 20rem;
+   background-image: url("/public/about_placeholder3.png");
+   background-position: center;
+   margin-top: 1rem;
+   border: 2px solid black;
+   }
+}
+@media screen and (max-width: 428px) {
+  .hey{
+    font-size: 1.3rem;
+    transform: rotate(-10deg);
+    padding-bottom: 1.8rem;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+}
+@media screen and (max-width: 428px) {
+  .damali{
+    padding-bottom: .5rem;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+  }
+}
+
+.aboutfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  height: 5rem;
+  background-color: #550052;
+  margin-top: 2rem; 
+}
+@media screen and (max-width: 428px) {
+  .aboutfooter{
+   margin-top: .8rem;
+   height: 4rem;
+   font-size: 3rem;
+  }
+} 
